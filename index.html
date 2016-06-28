@@ -1,101 +1,219 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Bootstrap 101 Template</title>
-        <link rel="shortcut icon" href="">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="main.css" rel="stylesheet">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/site.min.css"> -->
+    <script type="text/javascript">	    try { Typekit.load(); } catch (e) { }</script>
+    <link href="http://unumemarketing.com/renewal2015/css/bootstrap.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
 
-<div class="container-fluid">
-    
+<div class="container-fluid myContainerWidth">
 
-<main>
+    <header class="main-header">
+        <section class="main-header__branding row">
+            <!-- This will need to be uploaded to the media library and linked -->
+            <div class="col-sm-12">
+            	<img class="main-logo" alt="Unum" src="img/logo_unum_full_color.svg" />
+            </div>
+        </section>
+        <section class="main-header__content row">
+            <div class="col-sm-5 main-header__headingCol">
+                <h1 class="main-header__heading blue1-color">What trends affect insurance pricing?</h1>
+            </div>
 
-	<div class="row myContainerWidth bgYellow">
-		<div class="col-sm-12">
-		  <h1>Testing</h1>
-		  <div class="ribbon">
-		  	<div class="ribbon__guts">
-		  		<div class="ribbon__guts__number">1.</div>
-				<div class="triangle-left"></div>
-		  	</div>
-		  </div>
-		  <p>Here is some text in the single 12 col.</p>
-		  
-		</div>
-	</div>
+            <div class="col-sm-7">
+                <p class="main-header__summary">Costs are going up for insurance companies across America. Why?<br>Reasons include historically low interest rates, an aging workforce, and a sharp increase in claims from some diseases and injuries. When costs go up, prices must often rise, too, so companies have the financial resources to pay claims.</p>
+            </div>
+        </section>
+        <section class="main-header__cta row">
+            <!-- This will need to be uploaded to the media library and linked -->
+            <div class="col-sm-12 text-right">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a class="main-header__cta-link" href="/path/to/pdf.pdf" title="Download a PDF version of this document">Download PDF<span class="raquoSpan">&rsaquo;</span></a>
+            </div>
+        </section>
+    </header>
+    <main class="main-content">
+        <section class="factors">
+            <section class="factors__factor row">
+                <div class="col-sm-6">
+                    <!-- <h1 class="factors__heading">Low Interest Rates</h1> -->
+
+					<div class="rib">
+						<div class="ribbon">
+							<div class="ribbon__guts">
+								<div class="ribbon__guts__number">1</div>
+								<div class="triangle-left"></div>
+							</div>
+						</div>
+
+						<div class="rib_text factors__heading">Low Interest Rates</div>
+					</div>
+
+					<div class="factors__body">
+	                    <p>To make sure they have the resources to pay employee claims, insurance companies invest some of the benefit premiums they take in.</p>
+	                    <p>However, interest rates have been consistently low since the 2007 recession, and are likely to stay that way for a while.</p>
+	                    <p>As the ability to generate interest income goes down, insurance companies across the nation face pressure to raise their premium prices on benefits such as Long Term Disability.</p>
+                    </div>
+                </div>
+
+                <div class="factors__imgCol">
+                    <img src="http://fillmurray.com/400/500" class="img-responsive" />
+                </div>
+            </section>
 
 
-	<section class="row myContainerWidth bgOrange">
 
-		<div class="col-sm-6">
-		  <h2>Testing</h2>
-		  <p>Here is some text in a 6 col</p>
-		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At maiores saepe labore quo ex quisquam perferendis reprehenderit ullam quod, quis possimus ratione neque nesciunt sed eligendi non necessitatibus. Sunt, unde!</p>
-		</div>
+            <section class="factors__factor row">
+                <div class="col-sm-6">
 
-		<div class="col-sm-6">
-		  <h2>Testing</h2>
-		  <p>Here is some text in a 6 col</p>
-		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quae fugit minus doloribus saepe officiis aut, dignissimos hic, recusandae laboriosam facere temporibus sit tenetur nemo ut. Voluptate modi ut quod!</p>
-		</div>
+					<div class="rib">
+						<div class="ribbon">
+							<div class="ribbon__guts">
+								<div class="ribbon__guts__number">2</div>
+								<div class="triangle-left"></div>
+							</div>
+						</div>
 
-	</section>
+						<div class="rib_text factors__heading">Aging U.S. Workforce</div>
+					</div>
 
-	
-	<div class="row bgPink">
-		<div class="col-sm-12">
-		  
-			
-			<div class="row myContainerWidth">
-				<div class="col-sm-12">
-				  <h1>Testing</h1>
-				  <p>Here is some text in the single 12 col.</p>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, eaque, assumenda! Ipsam, odit nostrum doloremque veritatis soluta libero nulla blanditiis voluptas ex, expedita facilis temporibus recusandae assumenda, porro itaque, tenetur.</p>
-				</div>
-			</div>
+					<div class="factors__body">
+	                    <p>Two trends are increasing the average age of the American worker:</p>
+                <ul>
+                    <li>Baby Boomers are working longer before retiring</li>
+                    <li>Younger generations are entering the workforce later, after they go to college</li>
+                </ul>
+                <p>The older employees get, the more susceptible they are to illnesses such as heart disease, diabetes and cancer. As a result, they are more likely to file Life and Disability insurance claims.</p>
+                <p>Average age affects insurance prices across businessesof similar size, regardless of the actual range of a company's employees.</p>
+                    </div>
+                </div>
 
-
-		</div>
-	</div>
+                <div class="factors__imgCol">
+                    <img src="http://fillmurray.com/400/500" class="img-responsive" />
+                </div>
+            </section>
 
 
-	<section class="row myContainerWidth bgYellow">
 
-		<div class="col-sm-6">
-		  <h2>Testing</h2>
-		  <p>Here is some text in a 6 col</p>
-		</div>
+            <section class="factors__factor  row">
+                <div class="col-sm-6">
 
-		<div class="col-sm-6">
-		  <h2>Testing</h2>
-		  <p>Here is some text in a 6 col</p>
-		</div>
+					<div class="rib">
+						<div class="ribbon">
+							<div class="ribbon__guts">
+								<div class="ribbon__guts__number">3</div>
+								<div class="triangle-left"></div>
+							</div>
+						</div>
 
-	</section>
+						<div class="rib_text factors__heading">Increase in claims resulting from certain health conditions + injuries</div>
+					</div>
 
-</main>
+					<div class="factors__body">
+	                    <p>Over the last few years, we have seen double-digit increases in claims resulting from causes such as obesity, substance abuse, accidents and suicide. This alarming trend has increased claims costs for insurance companies across the nation.</p>
+                    </div>
+                </div>
 
+                <div class="factors__imgCol">
+                    <img src="http://fillmurray.com/400/500" class="img-responsive" />
+                </div>
+            </section>
+
+
+
+            <!-- <section class="factors__factor">
+                <h1 class="factors__heading">Increase in claims resulting from certain health conditions + injuries</h1>
+                <p>Over the last few years, we have seen double-digit increases in claims resulting from causes such as obesity, substance abuse, accidents and suicide. This alarming trend has increased claims costs for insurance companies across the nation.</p>
+            </section> -->
+        </section>
+
+
+
+
+        <section class="differences differences__spacing row">
+        	
+        	<div class="col-sm-12">
+            	<h1 class="differences__h1">The Unum Difference</h1>
+            </div>
+
+            <section class="differences__difference col-sm-4">
+            	<div class="differences__widthbox">
+	                <h2 class="differences__heading">Transparency &amp; Communication</h2>
+	                <p>These three trends are affecting insurance prices across the nation.  We strive for complete transparency in the way we communicate and price our benefits.</p>
+                </div>
+            </section>
+
+            <section class="differences__difference col-sm-4">
+            	<div class="differences__widthbox">
+	                <h2 class="differences__heading">Strong financial responsibility</h2>
+	                <p>Our disciplined investment and pricing strategies keep our price increases small and our financial health strong. We have consistently maintained an A rating with the major credit rating agencies</p>
+	                <ul class="financial-grades list-unstyled">
+	                    <!-- are these companies? Also, can't really read them. Double check these names -->
+	                    <li class="financial-grades__company financial-grades__company--excellent">
+	                        <span class="financial-grades__company-name">A.M. Best</span>
+	                        <span class="financial-grades__grade">A</span>
+	                        <span class="financial-grades__rating">Excellent</span>
+	                    </li>
+	                    <li class="financial-grades__company financial-grades__company--strong1">
+	                        <span class="financial-grades__company-name">Fitch</span>
+	                        <span class="financial-grades__grade">A</span>
+	                        <span class="financial-grades__rating">Strong</span>
+	                    </li>
+	                    <li class="financial-grades__company financial-grades__company--good">
+	                        <span class="financial-grades__company-name">Moody's</span>
+	                        <span class="financial-grades__grade">A2</span>
+	                        <span class="financial-grades__rating">Good</span>
+	                    </li>
+	                    <li class="financial-grades__company financial-grades__company--strong2">
+	                        <span class="financial-grades__company-name">S&amp;P</span>
+	                        <span class="financial-grades__grade">A</span>
+	                        <span class="financial-grades__rating">Strong</span>
+	                    </li>
+	                </ul>
+                </div>
+            </section>
+
+            <section class="differences__difference col-sm-4">
+            	<div class="differences__widthbox">
+	                <h2 class="differences__heading">The partner you can trust</h2>
+	                <p>As an industry-leading insurance provider, we value your business and the trust you place in us to protect your employees. We look forward to another great year of partnership with you.</p>
+	                <ol class="differences__products list-unstyled">
+	                    <li>#1 Group Disability<sup>1</sup></li>
+	                    <li>#2 Group Life<sup>2</sup></li>
+	                    <li>#3 Voluntary Benefits<sup>3</sup></li> 
+	                </ol>
+                </div>
+            </section>
+
+
+
+            <footer class="differences__footer col-sm-12">
+                <ol class="footnotes">
+                    <li class="footnotes__footnote">LIMRA, “U.S. Group Disability Insurance 2015 Annual Sales and In Force” (2016), based on inforce premium.</li>
+                    <li class="footnotes__footnote">Gen Re, “2015 U.S. Total Group Term Life Sales and Inforce Results” (2016), based on inforce cases</li>
+                    <li class="footnotes__footnote">Eastbridge, “U.S. Worksite/Voluntary Sales Report: Carrier Results for 2015” (2016), based on inforce premium.</li>
+                </ol>
+            </footer>
+        </section>
+    </main>
+ 
+    <footer class="main-footer">
+        <!-- fill this out if needed -->
+        <small>&copy;2016 Unum Group.  All rights reserved.  Unum is a registered trademark and marketing brand of Unum Group and its insuring subsidiaries.<br>
+        Insurance products are underwritten by the subsidiaries of Unum Group.
+		<br><br>
+		NS16-087
+        </small>
+    </footer>
 
 </div data-end="container">
 
-
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-<script src="js/jquery-2.2.4.min.js"></script>
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<script>
-$(document).ready(function() {
- 	//console.log('test')
-});
-</script>
-
-    </body>
+</body>
 </html>

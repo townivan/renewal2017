@@ -1,8 +1,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  line-height: 1.4;
   color: #333;
-  background-color: gray; }
+  background-color: white; }
 
 h1, h2, h3, h4 {
   font-family: Verdana, Geneva, sans-serif; }
@@ -13,6 +14,117 @@ p {
 .myContainerWidth {
   max-width: 1200px;
   margin: auto; }
+
+.main-logo {
+  width: 125px;
+  margin: 10px 0; }
+
+.main-header__heading {
+  font-size: 1.6em; }
+
+.main-header__content {
+  margin-top: 30px; }
+
+.main-header__heading {
+  color: #0099C3;
+  font-weight: bold;
+  margin-top: 0;
+  line-height: 1.2; }
+
+.main-header__summary {
+  font-size: .92em;
+  color: #007191; }
+
+a:link {
+  text-decoration: none; }
+
+a:hover, a:active {
+  text-decoration: underline; }
+
+.raquoSpan {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  /* changed from 0 to 1 to fix iPad air issue */
+  display: inline-block;
+  /* to prevent text-decoration inheritance */
+  text-decoration: none;
+  padding-left: 3px; }
+
+.factors__body {
+  margin-top: 30px;
+  color: #707070; }
+
+.blue1-bg {
+  background-color: #0099C3; }
+
+.differences__h1 {
+  color: #0099C3;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
+.differences__heading {
+  color: #007191;
+  font-weight: bold; }
+
+.differences__difference p {
+  color: #0099C3;
+  padding: 30px 0; }
+
+.differences__difference li {
+  color: #0099C3; }
+
+.differences__widthbox {
+  width: 80%; }
+
+.financial-grades__company {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 5px;
+  width: 23%;
+  text-align: center; }
+
+.financial-grades__company-name {
+  display: block;
+  color: #084d8a;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  font-size: .6em; }
+
+.financial-grades__grade {
+  display: block;
+  color: white;
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
+  line-height: 1; }
+
+.financial-grades__rating {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: .62em; }
+
+.financial-grades__company--excellent {
+  background-color: #bbcc3c; }
+
+.financial-grades__company--strong1 {
+  background-color: #61c6c0; }
+
+.financial-grades__company--good {
+  background-color: #1db0db; }
+
+.financial-grades__company--strong2 {
+  background-color: #84c14b; }
+
+.differences__footer {
+  margin-top: 120px;
+  color: #084d8a;
+  font-size: .7em; }
+
+.main-footer {
+  margin-top: 120px;
+  color: #5ab1b4; }
 
 .row > * {
   /* fix for margins of child elements breaking outside at mobile sizes */
@@ -27,29 +139,46 @@ p {
 .bgOrange {
   background-color: orange; }
 
+.rib {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.rib_text {
+  flex: 1 1 100%; }
+
 .ribbon {
   display: inline-block;
-  width: 300px;
-  background-color: lightblue;
+  width: 150px;
+  background-color: #7fe4fd;
   font-size: 30px; }
 
 .ribbon__guts {
   display: flex;
-  justify-content: flex-end; }
-
-.ribbon__guts > * {
-  border: 1px red solid; }
+  justify-content: flex-end;
+  color: white; }
 
 .ribbon__guts__number {
   display: flex;
   align-items: center;
-  margin-right: 20px; }
+  margin-right: 20px;
+  font-size: 1.6em; }
+
+.factors__heading {
+  color: #5ab1b4;
+  font-size: 24px; }
+
+.factors__factor {
+  margin-top: 60px; }
+
+.differences__spacing {
+  margin-top: 60px; }
 
 .triangle-left {
-  width: 10%;
+  width: 25%;
   height: 0;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 25%;
+  padding-bottom: 25%;
   overflow: hidden; }
 
 .triangle-left:after {
@@ -60,10 +189,30 @@ p {
   margin-top: -500px;
   border-top: 500px solid transparent;
   border-bottom: 500px solid transparent;
-  border-right: 500px solid white; }
+  border-right: 300px solid white; }
 
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .main-logo {
+    margin: 30px 0; }
+  .main-header__headingCol {
+    text-align: right; }
+  .main-header__heading {
+    font-size: 2em;
+    line-height: 1.1; }
+  .main-header__summary {
+    font-size: .8em; }
+  .factors__body {
+    margin-left: 68px; }
+  .factors__imgCol {
+    padding-left: 68px; }
+  .rib {
+    flex-wrap: initial; }
+  .rib_text {
+    padding-left: 5px;
+    flex: initial; } }
+
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
