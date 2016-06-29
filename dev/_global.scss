@@ -16,6 +16,7 @@ p{
 	margin: auto;
 }
 
+
 .main-logo{
 	width:125px;
 	margin:10px 0;
@@ -48,11 +49,58 @@ a:hover, a:active{text-decoration:underline;}
 }
 
 
+.rib{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+}
+.rib_text{
+	
+	flex:1 1 100%;
+}
+.ribbon{
+	display:inline-block;
+	width: 150px;
+	background-color: #7fe4fd;
+	font-size:30px;
+}
+.ribbon__guts{
+	display:flex;
+	justify-content:flex-end;
+	color: white;
+}
+.ribbon__guts__number{
+	display:flex;
+	align-items:center;
+	margin-right: 20px;
+	font-size: 1.6em;
+}
+.triangle-left {
+    width: 25%;
+    height: 0;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    overflow: hidden;
+}
+.triangle-left:after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0;
+    margin-top:-500px;
+     
+    border-top: 500px solid transparent;
+    border-bottom: 500px solid transparent;
+    border-right: 300px solid white;
+}
 
-
-
-
-
+.factors__heading{
+	color:#5ab1b4;
+	font-size: 24px;
+}
+.factors__factor{
+	margin-top:60px;
+}
 .factors__body{
 	margin-top: 30px;
 	color:#707070;
@@ -60,11 +108,9 @@ a:hover, a:active{text-decoration:underline;}
 
 
 
-
-.blue1-bg{
-	background-color:#0099C3
+.differences__spacing{
+	margin-top:60px;
 }
-
 .differences__h1{
 	color:#0099C3;
 	font-weight:bold;
@@ -73,6 +119,7 @@ a:hover, a:active{text-decoration:underline;}
 .differences__heading{
 	color:#007191;
 	font-weight:bold;
+	font-size:1.3em;
 }
 .differences__difference p{
 	color:#0099C3;
@@ -80,9 +127,6 @@ a:hover, a:active{text-decoration:underline;}
 }
 .differences__difference li{
 	color:#0099C3;
-}
-.differences__widthbox{
-	width:80%;
 }
 
 .financial-grades__company{
@@ -103,7 +147,6 @@ a:hover, a:active{text-decoration:underline;}
 .financial-grades__grade{
 	display:block;
 	color:white;
-	// font-weight:bold;
 	font-family:'Arvo', serif;
 	font-size: 1.5em;
 	line-height:1;
@@ -115,7 +158,6 @@ a:hover, a:active{text-decoration:underline;}
 	line-height:1;
 	font-size:.62em;
 }
-
 .financial-grades__company--excellent{
 	background-color:#bbcc3c;
 }
@@ -135,7 +177,9 @@ a:hover, a:active{text-decoration:underline;}
 	color:#084d8a;
 	font-size:.7em;
 }
-
+.footnotes{
+	padding-left:0;
+}
 .main-footer{
 	margin-top:120px;
 	color: #5ab1b4;
@@ -143,80 +187,16 @@ a:hover, a:active{text-decoration:underline;}
 
 
 .row > *{ /* fix for margins of child elements breaking outside at mobile sizes */
-	overflow:auto;
-}
-
-.bgYellow{background-color:yellow;}
-.bgPink{background-color:pink;}
-.bgOrange{background-color:orange;}
-
-.rib{
-	display:flex;
-	align-items:center;
-	flex-wrap:wrap;
-}
-.rib_text{
-	
-	flex:1 1 100%;
-}
-
-.ribbon{
-	display:inline-block;
-	width: 150px;
-	background-color: #7fe4fd;
-	font-size:30px;
-	// border-left-width: 30px;
-	// border-left: 40px red solid;
-}
-.ribbon__guts{
-	display:flex;
-	justify-content:flex-end;
-	color: white;
-}
-.ribbon__guts > *{
-	// border: 1px red solid;
-}
-.ribbon__guts__number{
-	display:flex;
-	align-items:center;
-	
-	margin-right: 20px;
-
-	font-size: 1.6em;
-}
-.factors__heading{
-	color:#5ab1b4;
-	font-size: 24px;
+	//overflow:auto;
 }
 
 
 
-.factors__factor{
-	margin-top:60px;
-}
-.differences__spacing{
-	margin-top:60px;
-}
 
 
-.triangle-left {
-    width: 25%;
-    height: 0;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    overflow: hidden;
-}
-.triangle-left:after {
-    content: "";
-    display: block;
-    width: 0; 
-    height: 0;
-    margin-top:-500px;
-     
-    border-top: 500px solid transparent;
-    border-bottom: 500px solid transparent;
-    border-right: 300px solid white;
-}
+
+
+
 
 
 
@@ -250,6 +230,14 @@ a:hover, a:active{text-decoration:underline;}
 		font-size: .8em;
 	}
 
+	.rib{
+		flex-wrap:initial;
+	}
+	.rib_text{
+		padding-left: 5px;
+		flex:initial;
+	}
+
 	.factors__body{
 		margin-left:68px;
 	}
@@ -258,12 +246,11 @@ a:hover, a:active{text-decoration:underline;}
 		padding-left:68px;
 	}
 
-	.rib{
-		flex-wrap:initial;
+	.differences__heading{
+		font-size:initial;
 	}
-	.rib_text{
-		padding-left: 5px;
-		flex:initial;
+	.differences__widthbox{
+		width:80%;
 	}
 
 }

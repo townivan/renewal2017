@@ -50,12 +50,61 @@ a:hover, a:active {
   text-decoration: none;
   padding-left: 3px; }
 
+.rib {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.rib_text {
+  flex: 1 1 100%; }
+
+.ribbon {
+  display: inline-block;
+  width: 150px;
+  background-color: #7fe4fd;
+  font-size: 30px; }
+
+.ribbon__guts {
+  display: flex;
+  justify-content: flex-end;
+  color: white; }
+
+.ribbon__guts__number {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 1.6em; }
+
+.triangle-left {
+  width: 25%;
+  height: 0;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  overflow: hidden; }
+
+.triangle-left:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -500px;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-right: 300px solid white; }
+
+.factors__heading {
+  color: #5ab1b4;
+  font-size: 24px; }
+
+.factors__factor {
+  margin-top: 60px; }
+
 .factors__body {
   margin-top: 30px;
   color: #707070; }
 
-.blue1-bg {
-  background-color: #0099C3; }
+.differences__spacing {
+  margin-top: 60px; }
 
 .differences__h1 {
   color: #0099C3;
@@ -64,7 +113,8 @@ a:hover, a:active {
 
 .differences__heading {
   color: #007191;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.3em; }
 
 .differences__difference p {
   color: #0099C3;
@@ -72,9 +122,6 @@ a:hover, a:active {
 
 .differences__difference li {
   color: #0099C3; }
-
-.differences__widthbox {
-  width: 80%; }
 
 .financial-grades__company {
   display: inline-block;
@@ -122,74 +169,15 @@ a:hover, a:active {
   color: #084d8a;
   font-size: .7em; }
 
+.footnotes {
+  padding-left: 0; }
+
 .main-footer {
   margin-top: 120px;
   color: #5ab1b4; }
 
 .row > * {
-  /* fix for margins of child elements breaking outside at mobile sizes */
-  overflow: auto; }
-
-.bgYellow {
-  background-color: yellow; }
-
-.bgPink {
-  background-color: pink; }
-
-.bgOrange {
-  background-color: orange; }
-
-.rib {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.rib_text {
-  flex: 1 1 100%; }
-
-.ribbon {
-  display: inline-block;
-  width: 150px;
-  background-color: #7fe4fd;
-  font-size: 30px; }
-
-.ribbon__guts {
-  display: flex;
-  justify-content: flex-end;
-  color: white; }
-
-.ribbon__guts__number {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  font-size: 1.6em; }
-
-.factors__heading {
-  color: #5ab1b4;
-  font-size: 24px; }
-
-.factors__factor {
-  margin-top: 60px; }
-
-.differences__spacing {
-  margin-top: 60px; }
-
-.triangle-left {
-  width: 25%;
-  height: 0;
-  padding-top: 25%;
-  padding-bottom: 25%;
-  overflow: hidden; }
-
-.triangle-left:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  margin-top: -500px;
-  border-top: 500px solid transparent;
-  border-bottom: 500px solid transparent;
-  border-right: 300px solid white; }
+  /* fix for margins of child elements breaking outside at mobile sizes */ }
 
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
@@ -204,15 +192,19 @@ a:hover, a:active {
     line-height: 1.1; }
   .main-header__summary {
     font-size: .8em; }
-  .factors__body {
-    margin-left: 68px; }
-  .factors__imgCol {
-    padding-left: 68px; }
   .rib {
     flex-wrap: initial; }
   .rib_text {
     padding-left: 5px;
-    flex: initial; } }
+    flex: initial; }
+  .factors__body {
+    margin-left: 68px; }
+  .factors__imgCol {
+    padding-left: 68px; }
+  .differences__heading {
+    font-size: initial; }
+  .differences__widthbox {
+    width: 80%; } }
 
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
