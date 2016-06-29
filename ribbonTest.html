@@ -10,6 +10,41 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
+        <style>
+        .myRibbonContainer{
+        	display: flex;
+        	align-items: center;
+        }
+        .myRibbonRect{
+        	background-color: lightblue;
+        	display: flex;
+        	align-items: center;
+        	height: 70px; /* set to twice the border size of the triangle */
+        	padding-left: 80px;
+        	padding-right: 20px;
+        	font-size: 2.5em;
+        	color: white;
+        }
+        .myRibbonTriangleBox{
+        	display: flex;
+        	align-items: center;
+        }
+        .myRibbonTriangle{
+        	border: 35px lightblue solid; /* half the height of the triangle */
+        	border-left-color: transparent;
+        	border-right-color: transparent;
+        	border-right-width: 20px; /* width of the triangle */
+        	height: 0;
+        	width:0;
+        	border-left: none;
+        }
+        .myRibbonAfterTriangleText{
+        	display: flex;
+        	align-items: center;
+        	font-size: 2em;
+        	margin-left: 15px;
+        }
+        </style>
     </head>
     <body>
 
@@ -28,7 +63,21 @@
 		  	</div>
 		  </div>
 		  <p>Here is some text in the single 12 col.</p>
-		  
+
+
+			<div class="myRibbonContainer">
+
+				<div class="myRibbonRect">1.</div>
+
+				<div class="myRibbonTriangleBox">
+					<div class="myRibbonTriangle"></div>
+				</div>
+
+				<div class="myRibbonAfterTriangleText">Hello there<br>line2<br>line3<br>line4</div>
+
+			</div> 
+
+
 		</div>
 	</div>
 

@@ -48,14 +48,13 @@ a:hover, a:active{text-decoration:underline;}
    padding-left:3px;
 }
 
-
+/*
 .rib{
 	display:flex;
 	align-items:center;
 	flex-wrap:wrap;
 }
 .rib_text{
-	
 	flex:1 1 100%;
 }
 .ribbon{
@@ -93,11 +92,54 @@ a:hover, a:active{text-decoration:underline;}
     border-bottom: 500px solid transparent;
     border-right: 300px solid white;
 }
+*/
 
-.factors__heading{
+
+
+.myRibbonContainer{
+	display: flex;
+	align-items: center;
+	flex-wrap:wrap;
+}
+.myRibbonRect{
+	background-color: #7fe4fd;
+	display: flex;
+	align-items: center;
+	height: 70px; /* set to twice the border size of the triangle */
+	padding-left: 68px;
+	padding-right: 20px;
+	font-size: 2.5em;
+	color: white;
+}
+.myRibbonTriangleBox{
+	display: flex;
+	align-items: center;
+}
+.myRibbonTriangle{
+	border: 35px #7fe4fd solid; /* half the height of the triangle */
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-right-width: 20px; /* width of the triangle */
+	height: 0;
+	width:0;
+	border-left: none;
+}
+.myRibbonAfterTriangleText{
+	display: flex;
+	align-items: center;
 	color:#5ab1b4;
 	font-size: 24px;
+	// margin-left: 15px;
 }
+
+
+
+
+
+// .factors__heading{
+// 	color:#5ab1b4;
+// 	font-size: 24px;
+// }
 .factors__factor{
 	margin-top:60px;
 }
@@ -222,20 +264,22 @@ a:hover, a:active{text-decoration:underline;}
 	.main-header__headingCol{
 		text-align:right;
 	}
-	.main-header__heading{
-		font-size: 2em;
-		line-height:1.1;
+	
+	.main-header__heading {
+	    font-size: 1.7em;
+	    line-height:1.1;
 	}
-	.main-header__summary{
-		font-size: .8em;
+	
+	.main-header__summary {
+	    font-size: .75em;
+	    margin-top: 7px;
 	}
 
-	.rib{
+	.myRibbonContainer{
 		flex-wrap:initial;
 	}
-	.rib_text{
-		padding-left: 5px;
-		flex:initial;
+	.myRibbonAfterTriangleText{
+		margin-left: 15px;
 	}
 
 	.factors__body{
@@ -246,22 +290,43 @@ a:hover, a:active{text-decoration:underline;}
 		padding-left:68px;
 	}
 
-	.differences__heading{
-		font-size:initial;
+	
+
+	
+
+	.differences__widthbox {
+    	width: 100%;
 	}
-	.differences__widthbox{
-		width:80%;
+	.differences__heading{
+		font-size:1.2em;
+	}
+	.financial-grades__company-name {
+    	font-size: 0.5em;
 	}
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.main-header__heading{
+		font-size: 2em;
+	}
+	.main-header__summary{
+		font-size: .8em;
+		margin-top: initial;
+	}
+	.differences__widthbox {
+	    width: 88%;
+	}
+	.financial-grades__company-name {
+    	font-size: 0.6em;
+	}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	.differences__widthbox{
+		width:80%;
+	}
 }
 
