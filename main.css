@@ -27,110 +27,54 @@ p {
 
 .main-header__heading {
   color: #0099C3;
-  font-weight: bold;
   margin-top: 0;
   line-height: 1.2; }
 
 .main-header__summary {
-  font-size: .92em;
-  color: #007191; }
+  font-size: 16px;
+  color: #333333; }
 
-a:link {
-  text-decoration: none; }
+.main-header__cta {
+  text-align: center;
+  margin-top: 20px; }
 
-a:hover, a:active {
-  text-decoration: underline; }
-
-.raquoSpan {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1;
-  /* changed from 0 to 1 to fix iPad air issue */
-  display: inline-block;
-  /* to prevent text-decoration inheritance */
+.main-header__cta-link {
+  color: #fff;
   text-decoration: none;
-  padding-left: 3px; }
+  background: #0099C3;
+  padding: 7px 20px;
+  border-radius: 7px; }
+  .main-header__cta-link:hover, .main-header__cta-link:focus {
+    background-color: #00c1f6;
+    color: white; }
 
-/*
-.rib{
-	display:flex;
-	align-items:center;
-	flex-wrap:wrap;
-}
-.rib_text{
-	flex:1 1 100%;
-}
-.ribbon{
-	display:inline-block;
-	width: 150px;
-	background-color: #7fe4fd;
-	font-size:30px;
-}
-.ribbon__guts{
-	display:flex;
-	justify-content:flex-end;
-	color: white;
-}
-.ribbon__guts__number{
-	display:flex;
-	align-items:center;
-	margin-right: 20px;
-	font-size: 1.6em;
-}
-.triangle-left {
-    width: 25%;
-    height: 0;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    overflow: hidden;
-}
-.triangle-left:after {
-    content: "";
-    display: block;
-    width: 0; 
-    height: 0;
-    margin-top:-500px;
-     
-    border-top: 500px solid transparent;
-    border-bottom: 500px solid transparent;
-    border-right: 300px solid white;
-}
-*/
 .myRibbonContainer {
   display: flex;
   align-items: center;
   flex-wrap: wrap; }
 
 .myRibbonRect {
-  background-color: #7fe4fd;
+  background-color: #00A7D4;
   display: flex;
   align-items: center;
-  height: 70px;
-  /* set to twice the border size of the triangle */
-  padding-left: 68px;
+  height: 60px;
+  padding-left: 22px;
   padding-right: 20px;
   font-size: 2.5em;
-  color: white; }
+  color: white;
+  border-radius: 5px; }
 
 .myRibbonTriangleBox {
   display: flex;
   align-items: center; }
 
-.myRibbonTriangle {
-  border: 35px #7fe4fd solid;
-  /* half the height of the triangle */
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-right-width: 20px;
-  /* width of the triangle */
-  height: 0;
-  width: 0;
-  border-left: none; }
-
 .myRibbonAfterTriangleText {
   display: flex;
   align-items: center;
-  color: #5ab1b4;
-  font-size: 24px; }
+  color: #333333;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  flex: 1 1 100%; }
 
 .factors__factor {
   margin-top: 60px; }
@@ -144,20 +88,19 @@ a:hover, a:active {
 
 .differences__h1 {
   color: #0099C3;
-  font-weight: bold;
   margin-bottom: 50px; }
 
 .differences__heading {
-  color: #007191;
-  font-weight: bold;
-  font-size: 1.3em; }
+  color: #333333;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif; }
 
 .differences__difference p {
-  color: #0099C3;
+  color: #333333;
   padding: 30px 0; }
 
 .differences__difference li {
-  color: #0099C3; }
+  color: #333333; }
 
 .financial-grades__company {
   display: inline-block;
@@ -201,16 +144,20 @@ a:hover, a:active {
   background-color: #84c14b; }
 
 .differences__footer {
-  margin-top: 120px;
-  color: #084d8a;
+  margin-top: 40px;
+  color: #333333;
   font-size: .7em; }
 
 .footnotes {
   padding-left: 0; }
 
 .main-footer {
-  margin-top: 120px;
-  color: #5ab1b4; }
+  margin-top: 30px;
+  color: #333333; }
+
+small, .small {
+  font-size: 75%;
+  line-height: 2px; }
 
 .row > * {
   /* fix for margins of child elements breaking outside at mobile sizes */ }
@@ -221,20 +168,18 @@ a:hover, a:active {
 @media only screen and (min-width: 768px) {
   .main-logo {
     margin: 30px 0; }
-  .main-header__headingCol {
-    text-align: right; }
   .main-header__heading {
     font-size: 1.7em;
     line-height: 1.1; }
   .main-header__summary {
-    font-size: .75em;
     margin-top: 7px; }
+  .main-header__cta {
+    text-align: right;
+    margin-top: 5px; }
   .myRibbonContainer {
     flex-wrap: initial; }
   .myRibbonAfterTriangleText {
     margin-left: 15px; }
-  .factors__body {
-    margin-left: 68px; }
   .factors__imgCol {
     padding-left: 68px; }
   .differences__widthbox {
@@ -242,14 +187,20 @@ a:hover, a:active {
   .differences__heading {
     font-size: 1.2em; }
   .financial-grades__company-name {
-    font-size: 0.5em; } }
+    font-size: 0.5em; }
+  .differences__footer {
+    margin-top: 40px;
+    color: #333333;
+    font-size: .7em; }
+  .main-footer {
+    margin-top: 120px;
+    color: #333333; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .main-header__heading {
     font-size: 2em; }
   .main-header__summary {
-    font-size: .8em;
     margin-top: initial; }
   .differences__widthbox {
     width: 88%; }
