@@ -110,6 +110,7 @@ hr{
 	margin-bottom:0;
 }
 .chartTitle{
+	margin-top: 20px;
 	color: #70706D;
 	text-align: center;
 }
@@ -265,6 +266,9 @@ small, .small {
 	.factors__imgCol{
 		padding-left:68px;
 	}
+	.chartTitle{
+		margin-top: 0;
+	}
 
 	
 
@@ -275,6 +279,7 @@ small, .small {
 	}
 	.differences__heading{
 		font-size:1.2em;
+		font-weight: bold;
 	}
 	.financial-grades__company-name {
     	font-size: 0.5em;
