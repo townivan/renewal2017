@@ -95,6 +95,10 @@ hr {
 .factors__body p.lastP {
   margin-bottom: 0; }
 
+.chartTitle {
+  color: #70706D;
+  text-align: center; }
+
 .differences__spacing {
   margin-top: 10px; }
 
