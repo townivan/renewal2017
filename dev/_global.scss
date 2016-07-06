@@ -40,21 +40,32 @@ hr{
 	font-size: 16px;
 	color: #333333;
 }
+
 .main-header__cta{
 	text-align:center;
 	margin-top:20px;
 }
 .main-header__cta-link {
-	color: #fff;
+	color: #0099C3;
 	text-decoration: none;
-	background: #0099C3;
-	padding: 7px 20px;
-	border-radius: 7px;
+	// background: #0099C3;
+	// padding: 7px 20px;
+	// border-radius: 7px;
 
 	&:hover, &:focus{
-		background-color:lighten(#0099C3, 10%);
-		color:white;
+		//background-color:lighten(#0099C3, 10%);
+		//color:white;
+		text-decoration: underline;
 	}
+}
+.main-header__cta-link:link{text-decoration:none;}
+.main-header__cta-link:hover, a:active{text-decoration:underline;}
+.raquoSpan{
+   font-family:Arial, Helvetica, sans-serif;
+   line-height: 1; /* changed from 0 to 1 to fix iPad air issue */
+   display: inline-block; /* to prevent text-decoration inheritance */
+   text-decoration:none;
+   padding-left:5px;
 }
 
 
@@ -99,7 +110,7 @@ hr{
 
 
  .myRibbonRect{
-       background-color: #7fe4fd;
+       background-color: #72c9f1;
         display: flex;
         align-items: center;
        height: 70px; /* set to twice the border size of the triangle */
@@ -109,7 +120,7 @@ hr{
         color: white;
  }
  .myRibbonTriangle{
-       border: 35px #7fe4fd solid; /* half the height of the triangle */
+       border: 35px #72c9f1 solid; /* half the height of the triangle */
        border-left-color: transparent;
        border-right-color: transparent;
        border-right-width: 20px; /* width of the triangle */
@@ -149,9 +160,10 @@ hr{
 	// margin-bottom:50px;
 }
 .differences__heading{
-	color:#333333;
+	color:#1e8568;
 	font-size: 24px;
 	font-family: $primaryFont;
+	line-height:1.4;
 }
 .differences__difference p{
 	color:#333333;
@@ -188,7 +200,7 @@ hr{
 	color:rgba(255,255,255, .7);
 	text-transform:uppercase;
 	line-height:1;
-	font-size:.62em;
+	font-size:.58em;
 }
 .financial-grades__company--excellent{
 	background-color:#bbcc3c;
@@ -309,6 +321,9 @@ small, .small {
 	.financial-grades__company-name {
     	font-size: 0.5em;
 	}
+	.financial-grades__rating {
+	    font-size: .46em;
+	}
 
 	.differences__footer{
 		margin-top:40px;
@@ -341,6 +356,9 @@ small, .small {
 	}
 	.financial-grades__company-name {
     	font-size: 0.6em;
+	}
+	.financial-grades__rating {
+	    font-size: .58em;
 	}
 }
 
