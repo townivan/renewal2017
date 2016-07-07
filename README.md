@@ -1,2 +1,7 @@
 # Basic gulp-sass-browsersync
-This is a basic template for building a site with gulp for sass and browsersync
+
+Just basic gulp stuff:
+-sass
+-browsersync
+
+The gulp task for watching sass and activating browsersync is 'gulp watch'
