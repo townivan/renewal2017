@@ -44,7 +44,7 @@ Temporary Items
 
 bower_components/
 node_modules/
-gulpfile.js
-package.json
+#gulpfile.js
+#package.json
 npm-debug.log
 variables.json
